@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="música para casamientos, música para civil, banda, altro ke, contacto, información">
+	<meta name="description" content="Altro-Ke musicaliza tus eventos a tu gusto. Contactá a la banda por más información.">
+	<title>Altro Ke | Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos2.css">
+</head>
+<body>
+	<div class="positionSticky">
+		<!-- Logo Principal -->
+		<header>
+			<a href="index.html"><img src="img/imgaltro1.jpg" alt="Logo Altro-Ke" class="logo sobreClick"></a>
+		</header>
+
+		<!-- Barra de Menú -->
+		<nav class="centrado">
+			<ul class="titulo" id="menu">
+				<li><a href="index.html" class="sobreClick">Home</a></li>
+				<li><a href="nosotros.html" class="sobreClick">Nosotros</a></li>
+				<li><a href="tumusica.html" class="sobreClick">¿Qué ofrecemos?</a></li>
+				<li><a href="galeria.html" class="sobreClick">Galería</a></li>
+				<li><a href="contacto.html" class="sobreClick">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<main>
+		<!-- Formulario de Contacto -->
+		<h1 class="titulo">Contacto</h1>
+
+		<form action="#" method="post" class="textoForm">
+			<fieldset>
+				<legend>Formulario de Contacto</legend>
+
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" autofocus="autofocus" placeholder="Escribe tu nombre"><br><br>
+
+				<label for="apellido">Apellido:</label>
+				<input type="text" name="apellido" placeholder="Escribe tu apellido"><br><br>
+
+				<label for="mail">E-mail:</label>
+				<input type="E-mail" name="mail" placeholder="email@gmail.com"><br><br>
+
+				<div>Evento/s que busca musicalizar:</div>
+					
+					<input type="checkbox" name="casamiento" value="1">
+					<label for="casamiento">Ceremonia de casamiento</label><br>
+
+					<input type="checkbox" name="civil" value="1">
+					<label for="civil">Civil</label><br>
+
+					<input type="checkbox" name="recep" value="1">
+					<label for="recep">Recepción</label><br>
+					
+					<input type="checkbox" name="fjov" value="1">
+					<label for="fjov">Fiesta de cumpleaños</label><br>
+
+					<input type="checkbox" name="femp" value="1">
+					<label for="femp">Fiesta de empresa</label><br>
+
+					<input type="checkbox" name="bar" value="1">
+					<label for="bar">Bar/Restaurant</label><br>
+
+					<input type="checkbox" name="otro" value="1">
+					<label for="otro">Otro</label><br><br>
+
+				<label for="contacto">¿Cómo nos conociste?</label>
+				<select name="contacto"><br>
+					<option value="INS">Instagram</option>
+					<option value="FACE">Facebook</option>
+					<option value="REC">Recomendación</option>
+					<option value="WEB">Por esta página</option>
+					<option value="OTR">Otro</option>
+				</select><br><br>
+
+				<input type="reset" name="borrar" value="Borrar">
+				<input type="submit" name="env" value="Enviar">
+			</fieldset>
+		</form>
+	</main>
+	
+	<footer class="fondoGris anchoCompleto">
+		<p class="centrado">Copyright - Altro-Ke®</p>
+	</footer>
+</body>
+</html>

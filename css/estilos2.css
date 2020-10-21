@@ -1,0 +1,308 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+@font-face {
+  font-family: Baronneuebold;
+  src: url(../fuentes/baronneuebold.otf); }
+
+/*CSS para index y en general*/
+body {
+  background-color: black; }
+
+.logo {
+  display: block;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  width: 10%;
+  height: 10%; }
+
+.positionSticky {
+  position: sticky;
+  top: 0px;
+  background-color: black;
+  z-index: 3; }
+
+.centrado {
+  margin: auto;
+  text-align: center;
+  padding: 10px; }
+
+.titulo {
+  font-family: Baronneuebold, Bahnschrift Light, Century Gothic;
+  font-weight: bold;
+  color: #7a1039;
+  font-size: 3.3rem; }
+
+a {
+  text-decoration: none;
+  color: #1c14a8; }
+
+#menu li {
+  display: inline-block;
+  flex-flow: row wrap;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 2rem; }
+
+nav ul li {
+  color: #7a1039; }
+
+.pantallaCompleta {
+  width: 100vw;
+  height: 100vh; }
+
+.imagenLink {
+  width: 10%;
+  height: 10%;
+  margin-left: 2rem;
+  padding: auto; }
+
+.textoLink {
+  font-family: Bahnschrift Light, Century Gothic;
+  color: #f0f0f7;
+  background-color: black;
+  font-size: 1.5rem;
+  margin-left: 2rem; }
+
+.tamañoTabla {
+  width: 95vw;
+  height: 95vh;
+  border-style: solid 1px;
+  border-color: #7a1039; }
+
+caption {
+  display: none; }
+
+.padreFlex {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: auto;
+  padding-left: auto;
+  margin: auto; }
+
+.fondoLogo {
+  background-image: url(../img/logoblack.jpg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.sobreClick:hover {
+  transform: scale(1.1, 1.1);
+  position: relative;
+  z-index: 2;
+  color: #1f139e; }
+
+.slogan {
+  color: #7a1039;
+  font-family: Bahnschrift Light;
+  font-weight: lighter;
+  font-size: 5rem;
+  letter-spacing: 3px;
+  padding-top: 5rem;
+  display: none; }
+
+/*CSS para páginas*/
+.textoComun {
+  font-family: Bahnschrift Light, Century Gothic;
+  color: #f0f0f7;
+  background-color: black;
+  font-size: 2.5rem; }
+
+.textoForm {
+  font-family: Bahnschrift Light, Century Gothic;
+  color: #f0f0f7;
+  background-color: black;
+  font-size: 2.2rem; }
+
+.autorDeCita {
+  font-family: Bahnschrift Light;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: #7a1039; }
+
+.citasEnTexto {
+  font-family: Bahnschrift Light;
+  font-weight: lighter;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  color: #7a1039; }
+
+.noLista {
+  list-style-type: none;
+  color: #f0f0f7;
+  font-size: 2.3rem; }
+
+.fondoGris {
+  background-color: #2f2f30;
+  color: #f0f0f7;
+  font-family: Bahnschrift Light;
+  font-style: bold;
+  font-size: 1.25rem; }
+
+/*CSS en general para etiquetas*/
+h2 {
+  color: #7a1039;
+  font-family: Bahnschrift Light;
+  font-weight: lighter;
+  font-size: 5rem;
+  letter-spacing: 3px; }
+
+caption, h3 {
+  color: #1c14a8;
+  font-family: Bahnschrift Light;
+  font-size: 3rem; }
+
+ul, ol {
+  color: #f0f0f7;
+  font-family: Bahnschrift Light;
+  font-size: 1.55rem;
+  list-style-type: none; }
+
+/*CSS para FlexBox*/
+.padreFlex2 {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100vw; }
+
+@keyframes aparecer {
+  0% {
+    width: 0px;
+    height: 0px; }
+  50% {
+    width: 10%;
+    height: 10%; }
+  100% {
+    width: 20%;
+    height: 20%; } }
+
+/*CSS para Animation*/
+.video {
+  order: -1;
+  height: 20%;
+  width: 20%;
+  animation-name: aparecer;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: inherit; }
+
+.imagen {
+  order: 1;
+  height: 20%;
+  width: 20%;
+  animation-name: aparecer;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: inherit; }
+
+.video:hover {
+  height: 30%;
+  width: 30%;
+  transition: all 1s; }
+
+.imagen:hover {
+  height: 30%;
+  width: 30%;
+  transition: all 1s; }
+
+.marginGal {
+  margin-left: 3rem;
+  margin-bottom: 3rem; }
+
+/*CSS para Grid*/
+.informacion {
+  display: grid;
+  grid-template-areas: "quien quien quien quien" "texto texto texto texto" "imguno infouno imgdos infodos";
+  grid-template-rows: 0.5fr 0.5fr 3fr;
+  grid-template-columns: 3fr 3fr 3fr 3fr; }
+
+.informacion__item {
+  padding: 1rem; }
+
+#nosotros {
+  grid-area: quien; }
+
+#textonosotros {
+  grid-area: texto; }
+
+#imagenuno {
+  grid-area: imguno; }
+
+#imagendos {
+  grid-area: imgdos; }
+
+#infouno {
+  grid-area: infouno; }
+
+#infodos {
+  grid-area: infodos; }
+
+.imagenBanda {
+  height: 403px;
+  width: 302px;
+  border-style: solid;
+  border-color: #7a1039; }
+
+.imagenBandaDos {
+  height: 403px;
+  width: 302px;
+  border-style: solid;
+  border-color: #7a1039; }
+
+.carousel {
+  max-height: 50%;
+  max-width: 50%;
+  text-align: center;
+  padding-right: auto;
+  padding-left: auto;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.anchoCompleto {
+  width: 100vw; }
+
+/* Medias Query */
+@media screen and (max-width: 900px) {
+  nav ul li a {
+    font-size: 1.6rem; }
+  .logo {
+    width: 20%;
+    height: 20%; }
+  .slogan {
+    display: inline-block;
+    width: 100vw;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    padding-top: 30rem;
+    margin-bottom: auto;
+    text-align: center;
+    align-content: center;
+    justify-content: center; }
+  .imagenLink {
+    width: 15%;
+    height: 15%; }
+  .textoLink {
+    font-size: 10px;
+    align-items: flex-end; }
+  .fondoLogo {
+    background-image: url(none); }
+  .pantallaCompleta {
+    height: 50vh; }
+  .padreFlex {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+    padding-bottom: auto;
+    padding-left: auto;
+    margin: auto; } }
